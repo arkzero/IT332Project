@@ -1,8 +1,8 @@
 body{
-	background-color: #eaf5ff;
+	background-color: #d9e3ff;
 }
 
-#page{
+.page{
 	width: 960px;
 	margin: auto;
 	background-color: #fff;
@@ -10,7 +10,7 @@ body{
 	border-radius: 32px;
 }
 
-#page #header{
+.page #header{
 	background-color: #88b2ff;
 	border-radius: 32px;
 	padding: 10px 32px;
@@ -19,14 +19,14 @@ body{
 	left: -32px;
 }
 
-#page #header h1{
+.page #header h1{
 	font-size: 42px;
 	color: white;
 	margin-bottom: 10px;
 	margin-top: 0px;
 }
 
-#page #header h3{
+.page #header h3{
 	margin: 0px;
 	color: white;
 	font-style: italic;
@@ -51,14 +51,14 @@ body{
 	box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.4), 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-#page #slideShow{
+.page #slideShow{
 	width: 930px;
 	height: 490px;
 	padding: 15px;
 	margin-top: 25px;
 }
 
-#page #slideShow #slideBody{
+.page #slideShow #slideBody{
 	width: 928px;
 	height: 300px;
 	background-color: #ccc;
@@ -66,21 +66,22 @@ body{
 	border-bottom: 0;
 	position: relative;
 	z-index: 2;
+	cursor: pointer;
 }
 
-#page #slideBody .slide{
+.page #slideBody .slide{
 	position: absolute;
 	width: 928px;
 	height: 300px;
 	opacity: 0;
 }
 
-#page #slideShow #navSection{
+.page #slideShow #navSection{
 	width: 100%;
 	height: 150px;
 }
 
-#page #slideShow #navSection .slideButton{
+.page #slideShow #navSection .slideButton{
 	position: relative;
 	float: left;
 	width: 308px;
@@ -92,22 +93,22 @@ body{
 	top: -12px;
 }
 
-#page #slideShow #navSection .slideButton.selected{
+.page #slideShow #navSection .slideButton.selected{
 	background-color: #8fa8c1;
 }
 
-#page #slideShow #navSection .slideButton img{
+.page #slideShow #navSection .slideButton img{
 	width: 125px;
 	height: 125px;
 	margin: 20px 92px 0px 92px;
 }
 
-#page #slideShow #navSection .slideButton h2{
+.page #slideShow #navSection .slideButton h2{
 	margin: 0;
 	text-align: center;
 }
 
-#page #about{
+.page .textArea{
 	padding: 20px;
 	width: 920px;
 	background-color: #cce6ff;
@@ -115,22 +116,81 @@ body{
 	margin-top: 20px;
 }
 
-#page #about p{
-	color: rgb(93, 162, 201);
+.page .textArea p{
+	color: #5DA2C9;
 	font-weight: bold;
 	font-family: arial;
 	line-height: 30px;
 }
 
-#page #about .button{
+.page .textArea .button{
 	top: 0px;
 	float: none;
 	margin: auto;
 }
 
-#page #about .button div{
+.page .textArea .button div{
 	width: 127px;
 	margin: auto;
 	font-size: 24px;
 }
 
+.page #overview.textArea{
+	background-color: #8396DD;
+}
+
+.page #overview.textArea p{
+	color: #CBE1EE;
+}
+
+#info.page .image{
+	position: relative;
+	background-color: #98b0FF;
+	border-radius: 32px;
+	padding: 15px;
+}
+
+#info.page .image .left{
+	float: left;
+}
+
+#info.page .image .right{
+	float: right;
+}
+
+#info.page img#mockup{
+	height: 400px;
+	width: 600px;
+	margin-top: 25px;
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+#info.page img#speedImg{
+	width: 300px;
+	margin: 0px 20px 20px;
+}
+
+#info.page img#securityImg{
+	margin: 0px 20px 20px;
+}
+
+#info.page img#integrationImg{
+	margin: 0px 20px 20px;
+	width: 250px;
+}
+
+.page .sectionHeader{
+	background-color: #88b2ff;
+	border-radius: 32px;
+	padding: 10px;
+	position: relative;
+	color: white;
+	text-align: center;
+	font-size: 24px;
+	margin-top: 20px;
+}
+
+.page .sectionHeader h2{
+	margin: 0;
+}

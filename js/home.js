@@ -45,6 +45,16 @@ $( function($) {
                 }
             }
         });
+        
+        $('#slideBody').click(function($){
+        	console.log(security)
+        	if(security)
+        		document.location.href = 'info.html#security';
+        	else if (speed)
+        		document.location.href = 'info.html#speed';
+        	else if (integration)
+        		document.location.href = 'info.html#integration';
+        });
 
         function SelectTab(name) {
             $('#' + name).addClass('selected');
