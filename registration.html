@@ -39,9 +39,9 @@
 			<div id = "form">
 				<form action="registration.php" method="post">
 					Account Information<br>
-					<input type="text" name="username" /> Username<br>
-					<input type="text" name="password" /> Password<br>
-					<input type="text" name="email" /> Email<br>
+					<input type="text" name="username" required="required" /> Username<br>
+					<input type="password" name="password" required="required" autocomplete="off" /> Password<br>
+					<input type="email" name="email" required="required" /> Email<br>
 					<br><br>
 					Security Question<br>
 					<select name="question">
@@ -52,7 +52,7 @@
 						<option value="option 5">What is the airspeed velocity of an unladen swallow?</option>
 					</select><br>
 					<br>
-					Answer <input type="text" name="answer" /><br>
+					Answer <input type="text" name="answer" required="required" /><br>
 					<br><br>
 					<input type="checkbox" name="creditCard" /> Credit Card?<br>
 					<br><br>
