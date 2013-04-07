@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>Synergy - Register</title>
+		
+		<link rel = "stylesheet" href = "main.css" />
+		
+		<!-- JavaScript Libraries -->
+		<script type="text/javascript" src="js/libs/jquery.js"></script>
+		
+		<meta name="description" content="" />
+		<meta name="author" content="Bryan" />
+
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+	</head>
+	
+	<body>
+		<div class = "page" id = "register">
+			<div id = "header">
+				<a href = "" class = "button">
+					<div  id = "login">Log In</div>
+				</a>
+				<a href = "" class = "button">
+					<div  id = "signup">Sign Up</div>
+				</a>
+			
+				<h1>Synergy</h1>
+				<h3>Synergize Your Life</h3>
+			</div>
+			<div id = "form">
+				<form action="registration.php" method="post">
+					Account Information<br>
+					<input type="text" name="username" /> Username<br>
+					<input type="text" name="password" /> Password<br>
+					<input type="text" name="email" /> Email<br>
+					<br><br>
+					Security Question<br>
+					<select name="question">
+						<option value="option 1">What is your name?</option>
+						<option value="option 2">What is your quest?</option>
+						<option value="option 3">What is your favorite color?</option>
+						<option value="option 4">What is the capital of Assyria?</option>
+						<option value="option 5">What is the airspeed velocity of an unladen swallow?</option>
+					</select><br>
+					<br>
+					Answer <input type="text" name="answer" /><br>
+					<br><br>
+					<input type="checkbox" name="creditCard" /> Credit Card?<br>
+					<br><br>
+					Do you have an account with any of the following online services?<br>
+					<input type="checkbox" name="amazon" /> Amazon<br>
+					<input type="checkbox" name="aol" /> AOL<br>
+					<input type="checkbox" name="apple" /> Apple, including Apple Store<br>
+					<input type="checkbox" name="battlenet" /> Battlenet<br>
+					<input type="checkbox" name="bebo" /> Bebo<br>
+					<input type="checkbox" name="blogspot" /> Blogspot<br>
+					<input type="checkbox" name="classmatesDotCom" /> Classmates.com<br>
+					<input type="checkbox" name="comcast" /> Comcast<br>
+					<input type="checkbox" name="deviantArt" /> deviantART<br>
+					<input type="checkbox" name="delicious" /> Delicious<br>
+					<input type="checkbox" name="digg" /> Digg<br>
+					<input type="checkbox" name="ebay" /> Ebay, including Half.com<br>
+					<input type="checkbox" name="facebook" /> Facebook<br>
+					<input type="checkbox" name="flickr" /> Flickr<br>
+					<input type="checkbox" name="flixster" /> Flixster<br>
+					<input type="checkbox" name="foursquare" /> Foursquare<br>
+					<input type="checkbox" name="gaiaOnline" /> Gaia Online<br>
+					<input type="checkbox" name="google" /> Google, including Google+, Gmail, and possibly Youtube<br>
+					<input type="checkbox" name="hotmail" /> Hotmail<br>
+					<input type="checkbox" name="instagram" /> Instagram<br>
+					<input type="checkbox" name="imgur" /> imgur<br>
+					<input type="checkbox" name="lastFm" /> Last.fm<br>
+					<input type="checkbox" name="leagueOfLegends" /> League of Legends<br>
+					<input type="checkbox" name="linkedIn" /> LinkedIn<br>
+					<input type="checkbox" name="liveJournal" /> LiveJournal<br>
+					<input type="checkbox" name="microsoft" /> Microsoft Account, including MSN and Xbox Live<br>
+					<input type="checkbox" name="myLife" /> MyLife<br>
+					<input type="checkbox" name="myspace" /> Myspace<br>
+					<input type="checkbox" name="newegg" /> Newegg<br>
+					<input type="checkbox" name="newsvine" /> Newsvine<br>
+					<input type="checkbox" name="optimum" /> Optimum<br>
+					<input type="checkbox" name="origin" /> Origin<br>
+					<input type="checkbox" name="paypal" /> Paypal<br>
+					<input type="checkbox" name="planetside" /> Planetside and/or Planetside 2<br>
+					<input type="checkbox" name="playstation" /> Playstation Network<br>
+					<input type="checkbox" name="reddit" /> Reddit<br>
+					<input type="checkbox" name="secondLife" /> Second Life<br>
+					<input type="checkbox" name="steam" /> Steam<br>
+					<input type="checkbox" name="stumbleUpon" /> StumbleUpon<br>
+					<input type="checkbox" name="tumblr" /> Tumblr<br>
+					<input type="checkbox" name="twitter" /> Twitter<br>
+					<input type="checkbox" name="yahoo" /> Yahoo<br>
+					<input type="checkbox" name="youTube" /> YouTube (if seperate from your Google account)<br>
+					<input type="checkbox" name="worldOfWarcraft" /> World of Warcraft<br>
+					<input type="checkbox" name="wordpress" /> Wordpress<br>
+					<br><br>
+					<input type="submit" value="Register" />
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
