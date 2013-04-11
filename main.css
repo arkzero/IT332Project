@@ -194,3 +194,40 @@ body{
 .page .sectionHeader h2{
 	margin: 0;
 }
+
+.alignLeft {
+	float: left;
+	width: 33%;
+}
+
+.alignRight {
+	float: right;
+	width: 66%
+}
+
+.alignRightA {
+	float: left;
+	width: 50%
+}
+
+.alignRightB {
+	float: right;
+	width: 50%
+}
+
+.registerFieldset {
+	border-radius: 20px;
+}
+
+.registerSelect {
+	border-color: #bbb;
+	border-radius: 10px;
+}
+
+.registerField {
+	border-radius: 10px;
+}
+
+.registerButton {
+	border-radius: 5px;
+}

@@ -26,84 +26,94 @@
 	<body>
 		<div class = "page" id = "register">
 			<div id = "header">
-				<a href = "" class = "button">
-					<div  id = "login">Log In</div>
-				</a>
-				<a href = "" class = "button">
-					<div  id = "signup">Sign Up</div>
-				</a>
-			
 				<h1>Synergy</h1>
 				<h3>Synergize Your Life</h3>
 			</div>
+			<br>
 			<div id = "form">
 				<form action="registration.php" method="post">
-					Account Information<br>
-					<input type="text" name="username" required="required" /> Username<br>
-					<input type="password" name="password" required="required" autocomplete="off" /> Password<br>
-					<input type="email" name="email" required="required" /> Email<br>
+					<fieldset class="registerFieldset" >
+						<legend>Account Information</legend>
+						<input type="text" name="username" class="registerField" required="required" /> Username<br>
+						<input type="password" name="password" class="registerField" required="required" autocomplete="off" /> Password<br>
+						<input type="email" name="email" class="registerField" required="required" /> Email<br>
+						<br><br>
+						Security Question<br>
+						<select name="question" class="registerSelect">
+							<option value="option 1">What is the name of your favorite childhood friend?</option>
+							<option value="option 2">What was your childhood nickname?</option>
+							<option value="option 3">What street did you live on in third grade?</option>
+							<option value="option 4">What is your oldest sibling's middle name?</option>
+							<option value="option 5">What school did you attend for sixth grade?</option>
+							<option value="option 6">What was the name of your first stuffed animal?</option>
+							<option value="option 7">In what city or town did your mother and father meet?</option>
+							<option value="option 8">What was the last name of your third grade teacher?</option>
+							<option value="option 9">What is the name of a college you applied to but didn't attend?</option>
+						</select><br>
+						<br>
+						Answer <input type="text" name="answer" class="registerField" required="required" /><br>
+						<br><br>
+						<input type="checkbox" name="creditCard" class="" /> Credit Card?
+					</fieldset>
 					<br><br>
-					Security Question<br>
-					<select name="question">
-						<option value="option 1">What is your name?</option>
-						<option value="option 2">What is your quest?</option>
-						<option value="option 3">What is your favorite color?</option>
-						<option value="option 4">What is the capital of Assyria?</option>
-						<option value="option 5">What is the airspeed velocity of an unladen swallow?</option>
-					</select><br>
-					<br>
-					Answer <input type="text" name="answer" required="required" /><br>
+					<fieldset class="registerFieldset" >
+						<legend>Web Services</legend>
+						<section class="alignLeft">
+							<input type="checkbox" name="amazon" class="" /> Amazon<br>
+							<input type="checkbox" name="aol" class="" /> AOL<br>
+							<input type="checkbox" name="apple" class="" /> Apple Store<br>
+							<input type="checkbox" name="battlenet" class="" /> Battlenet<br>
+							<input type="checkbox" name="bebo" class="" /> Bebo<br>
+							<input type="checkbox" name="blogspot" class="" /> Blogspot<br>
+							<input type="checkbox" name="classmatesDotCom" class="" /> Classmates.com<br>
+							<input type="checkbox" name="comcast" class="" /> Comcast<br>
+							<input type="checkbox" name="deviantArt" class="" /> deviantART<br>
+							<input type="checkbox" name="delicious" class="" /> Delicious<br>
+							<input type="checkbox" name="digg" class="" /> Digg<br>
+							<input type="checkbox" name="ebay" class="" /> Ebay<br>
+							<input type="checkbox" name="facebook" class="" /> Facebook<br>
+							<input type="checkbox" name="flickr" class="" /> Flickr<br>
+							<input type="checkbox" name="flixster" class="" /> Flixster
+						</section>
+						<section class="alignRight">
+							<section class="alignRightA">
+								<input type="checkbox" name="foursquare" class="" /> Foursquare<br>
+								<input type="checkbox" name="gaiaOnline" class="" /> Gaia Online<br>
+								<input type="checkbox" name="google" class="" /> Google<br>
+								<input type="checkbox" name="hotmail" class="" /> Hotmail<br>
+								<input type="checkbox" name="instagram" class="" /> Instagram<br>
+								<input type="checkbox" name="imgur" class="" /> imgur<br>
+								<input type="checkbox" name="lastFm" class="" /> Last.fm<br>
+								<input type="checkbox" name="leagueOfLegends" class="" /> League of Legends<br>
+								<input type="checkbox" name="linkedIn" class="" /> LinkedIn<br>
+								<input type="checkbox" name="liveJournal" class="" /> LiveJournal<br>
+								<input type="checkbox" name="microsoft" class="" /> Microsoft Account<br>
+								<input type="checkbox" name="myLife" class="" /> MyLife<br>
+								<input type="checkbox" name="myspace" class="" /> Myspace<br>
+								<input type="checkbox" name="newegg" class="" /> Newegg<br>
+								<input type="checkbox" name="newsvine" class="" /> Newsvine
+							</section>
+							<section class="alignRightB">
+								<input type="checkbox" name="optimum" class="" /> Optimum<br>
+								<input type="checkbox" name="origin" class="" /> Origin<br>
+								<input type="checkbox" name="paypal" class="" /> Paypal<br>
+								<input type="checkbox" name="planetside" class="" /> Planetside<br>
+								<input type="checkbox" name="playstation" class="" /> Playstation Network<br>
+								<input type="checkbox" name="reddit" class="" /> Reddit<br>
+								<input type="checkbox" name="secondLife" class="" /> Second Life<br>
+								<input type="checkbox" name="steam" class="" /> Steam<br>
+								<input type="checkbox" name="stumbleUpon" class="" /> StumbleUpon<br>
+								<input type="checkbox" name="tumblr" class="" /> Tumblr<br>
+								<input type="checkbox" name="twitter" class="" /> Twitter<br>
+								<input type="checkbox" name="yahoo" class="" /> Yahoo<br>
+								<input type="checkbox" name="youTube" class="" /> YouTube<br>
+								<input type="checkbox" name="worldOfWarcraft" class="" /> World of Warcraft<br>
+								<input type="checkbox" name="wordpress" class="" /> Wordpress
+								</section>
+						</section>
+					</fieldset>
 					<br><br>
-					<input type="checkbox" name="creditCard" /> Credit Card?<br>
-					<br><br>
-					Do you have an account with any of the following online services?<br>
-					<input type="checkbox" name="amazon" /> Amazon<br>
-					<input type="checkbox" name="aol" /> AOL<br>
-					<input type="checkbox" name="apple" /> Apple, including Apple Store<br>
-					<input type="checkbox" name="battlenet" /> Battlenet<br>
-					<input type="checkbox" name="bebo" /> Bebo<br>
-					<input type="checkbox" name="blogspot" /> Blogspot<br>
-					<input type="checkbox" name="classmatesDotCom" /> Classmates.com<br>
-					<input type="checkbox" name="comcast" /> Comcast<br>
-					<input type="checkbox" name="deviantArt" /> deviantART<br>
-					<input type="checkbox" name="delicious" /> Delicious<br>
-					<input type="checkbox" name="digg" /> Digg<br>
-					<input type="checkbox" name="ebay" /> Ebay, including Half.com<br>
-					<input type="checkbox" name="facebook" /> Facebook<br>
-					<input type="checkbox" name="flickr" /> Flickr<br>
-					<input type="checkbox" name="flixster" /> Flixster<br>
-					<input type="checkbox" name="foursquare" /> Foursquare<br>
-					<input type="checkbox" name="gaiaOnline" /> Gaia Online<br>
-					<input type="checkbox" name="google" /> Google, including Google+, Gmail, and possibly Youtube<br>
-					<input type="checkbox" name="hotmail" /> Hotmail<br>
-					<input type="checkbox" name="instagram" /> Instagram<br>
-					<input type="checkbox" name="imgur" /> imgur<br>
-					<input type="checkbox" name="lastFm" /> Last.fm<br>
-					<input type="checkbox" name="leagueOfLegends" /> League of Legends<br>
-					<input type="checkbox" name="linkedIn" /> LinkedIn<br>
-					<input type="checkbox" name="liveJournal" /> LiveJournal<br>
-					<input type="checkbox" name="microsoft" /> Microsoft Account, including MSN and Xbox Live<br>
-					<input type="checkbox" name="myLife" /> MyLife<br>
-					<input type="checkbox" name="myspace" /> Myspace<br>
-					<input type="checkbox" name="newegg" /> Newegg<br>
-					<input type="checkbox" name="newsvine" /> Newsvine<br>
-					<input type="checkbox" name="optimum" /> Optimum<br>
-					<input type="checkbox" name="origin" /> Origin<br>
-					<input type="checkbox" name="paypal" /> Paypal<br>
-					<input type="checkbox" name="planetside" /> Planetside and/or Planetside 2<br>
-					<input type="checkbox" name="playstation" /> Playstation Network<br>
-					<input type="checkbox" name="reddit" /> Reddit<br>
-					<input type="checkbox" name="secondLife" /> Second Life<br>
-					<input type="checkbox" name="steam" /> Steam<br>
-					<input type="checkbox" name="stumbleUpon" /> StumbleUpon<br>
-					<input type="checkbox" name="tumblr" /> Tumblr<br>
-					<input type="checkbox" name="twitter" /> Twitter<br>
-					<input type="checkbox" name="yahoo" /> Yahoo<br>
-					<input type="checkbox" name="youTube" /> YouTube (if seperate from your Google account)<br>
-					<input type="checkbox" name="worldOfWarcraft" /> World of Warcraft<br>
-					<input type="checkbox" name="wordpress" /> Wordpress<br>
-					<br><br>
-					<input type="submit" value="Register" />
+					<input type="submit" class="registerButton" value="Register" />
 				</form>
 			</div>
 		</div>
