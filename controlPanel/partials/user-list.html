@@ -1,0 +1,18 @@
+<div id = "listView">
+	Search: <input ng-model="query">
+	Sort By:
+	<select ng-model="orderProp" ng-change="changeOrder()">
+		<option value = "uid">Newest</option>
+		<option value = "username">Alphabetically</option>
+		<option value = "credit_card">Priority</option>
+	</select>
+	<div id = "userPreview">
+		<h2>{{selected.username}}</h2>
+		<h3>{{selected.password}}</h3>
+	</div>
+	<div id = "userList">
+		<div class = "user credit{{user.credit_card}}" ng-id = {{user.uid}} ng-repeat = "user in users | filter:query | orderBy: orderProp: reverse" ng-click = "selectUser(user)">
+			{{user.username}}
+		</div>
+	</div>
+</div>
