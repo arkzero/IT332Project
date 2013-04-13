@@ -6,7 +6,9 @@ function UserList($scope, $http, User){
 	/*$http.get("http://web.njit.edu/~bcn3/IT332Project/controlPanel/php/retrieveData.php").success(function(data){
 		$scope.users = data;
 	});*/
-	$scope.users = User.query();
+	$scope.users = User.query(function(user){
+		$scope.selected = user[0];
+	});
 
 	$scope.orderProp = 'uid';
 	$scope.reverse = true;
@@ -19,6 +21,12 @@ function UserList($scope, $http, User){
 		}else if ($scope.orderProp === 'credit_card'){
 			$scope.reverse = true;
 		}
+	}
+
+	$scope.selectUser = function(user) {
+		$('#' + $scope.selected.uid).removeClass('selected');
+	    $scope.selected = user;
+	    $('#' + user.uid).addClass('selected');
 	}
 }
 
