@@ -31,5 +31,7 @@ function UserList($scope, $http, User){
 }
 
 function UserDetails($scope, $routeParams, User){
-
+	$scope.users = User.query(function(user) {
+	    $scope.selected = user[$routeParams.uid - 1];
+	});
 }

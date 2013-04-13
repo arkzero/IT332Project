@@ -9,7 +9,8 @@
 	<div id = "userPreview">
 		<h1 id = "userName">{{selected.username}}</h1>
 		<div id ="userInfo">
-
+			<label for = "email" class = "float highlight">Email:</label>
+			<p id = "email" class = "highlight">{{selected.email}}</p>
 			<label for ="password" class = "float highlight">Password:</label>
 			<p id = "password" class = "highlight">{{selected.password}}</p>
 
@@ -36,9 +37,11 @@
 				<p id = "answer3">{{selected.answer3}}</p>
 			</div>
 			
-			<a href = "#/users/{{selected.uid}}"><div class = "button">
-				<div id = "viewMore">View More</div>
-			</div></a>
+			<a href = "#/users/{{selected.uid}}">
+				<div class = "button">
+					<div id = "viewMore">View More</div>
+				</div>
+			</a>
 
 		</div>
 	</div>
