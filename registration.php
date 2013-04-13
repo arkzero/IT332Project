@@ -58,6 +58,8 @@
 	$worldOfWarcraft = $_POST["worldOfWarcraft"];
 	$wordpress = $_POST["wordpress"];
 	
+	$count = 0;
+	
 	$array = array(
 		$creditCard,
 		$amazon,
@@ -112,6 +114,7 @@
 	for($i = 0; $i < count($array); $i++) {
 		if($array[$i] === "on") {
 			$array[$i] = "true";
+			$count++;
 		}else{
 			$array[$i] = "false";
 		}
@@ -194,7 +197,8 @@
 			yahoo,
 			youtube,
 			world_of_warcraft,
-			wordpress
+			wordpress,
+			num_services
 		) VALUES (
 			'$username',
 			'$password',
@@ -250,7 +254,8 @@
 			'$array[42]',
 			'$array[43]',
 			'$array[44]',
-			'$array[45]'
+			'$array[45]',
+			'$count'
 		)");
 	}
 	
