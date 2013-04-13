@@ -3,8 +3,12 @@
 	$username = $_POST["username"];
 	$password = $_POST["password"];
 	$email = $_POST["email"];
-	$question = $_POST["question"];
-	$answer = $_POST["answer"];
+	$question1 = $_POST["question1"];
+	$answer1 = $_POST["answer1"];
+	$question2 = $_POST["question2"];
+	$answer2 = $_POST["answer2"];
+	$question3 = $_POST["question3"];
+	$answer3 = $_POST["answer3"];
 	$creditCard = $_POST["creditCard"];
 	
 	// Web service variables
@@ -124,8 +128,12 @@
 		echo $username . "<br>";
 		echo $password . "<br>";
 		echo $email . "<br>";
-		echo $question . "<br>";
-		echo $answer . "<br>";
+		echo $question1 . "<br>";
+		echo $answer1 . "<br>";
+		echo $question2 . "<br>";
+		echo $answer2 . "<br>";
+		echo $question3 . "<br>";
+		echo $answer3 . "<br>";
 		for($i = 0; $i < count($array); $i++) {
 			echo $array[$i] . "<br>";
 		}
@@ -135,8 +143,12 @@
 			username,
 			password,
 			email,
-			security_question,
-			security_answer,
+			question1,
+			answer1,
+			question2,
+			answer2,
+			question3,
+			answer3,
 			credit_card,
 			amazon,
 			aol,
@@ -187,8 +199,12 @@
 			'$username',
 			'$password',
 			'$email',
-			'$question',
-			'$answer',
+			'$question1',
+			'$answer1',
+			'$question2',
+			'$answer2',
+			'$question3',
+			'$answer3',
 			'$array[0]',
 			'$array[1]',
 			'$array[2]',
