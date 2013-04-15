@@ -87,13 +87,18 @@ body{
 	font-size: 16px;
 }
 
-#userPreview #userInfo label.float{
+#userInfo label.float{
 	position: relative;
 	float: left;
+	margin-right: 10px;
 }
 
-#userPreview #userInfo .highlight{
+#userInfo .highlight{
 	font-size: 22px;
+}
+
+label.highlight{
+	font-weight: bold;
 }
 
 #userPreview #userInfo p{
@@ -125,4 +130,24 @@ body{
 	width: 100px;
 	text-align: center;
 	text-decoration: none;
+}
+
+#detailsView{
+	height: 650px;
+}
+
+#detailsView #questions{
+	position: relative;
+	float: right;
+	width: 300px;
+}
+
+#detailsView #services{
+	position: relative;
+	float: right;
+	width: 300px;
+}
+
+#detailsView #userInfo{
+	width: 300px;
 }
