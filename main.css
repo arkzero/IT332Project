@@ -231,3 +231,59 @@ body{
 .registerButton {
 	border-radius: 5px;
 }
+
+#login #loginForm{
+	width: 305px;
+	margin: auto;
+	margin-top: 70px;
+	background-color: #5a76cc;
+	padding: 30px;
+	border-radius: 30px;
+	color: white;
+	font-size: 24px;
+}
+
+#login #username{
+	display: block;
+	width: 300px;
+	margin-bottom: 30px;
+}
+
+#login #password{
+	display: block;
+	margin-bottom: 50px;
+	width: 300px;
+}
+
+#login #submit{
+	margin-left: 38px;
+}
+
+#login #loginForm .button{
+	background-color: #88b2ff;
+	float: none;
+	top: 0px;
+	width: 78px;
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+	border-radius: 32px;
+	cursor: pointer;
+}
+
+#login.page{
+	padding-bottom: 90px;
+}
+
+#errorMessage{
+	background-color: #5a76cc;
+	width: 450px;
+	font-size: 32px;
+	line-height: 64px;
+	color: white;
+	padding: 20px;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border-radius: 32px;
+}
