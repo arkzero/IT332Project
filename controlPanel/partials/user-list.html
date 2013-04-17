@@ -7,11 +7,46 @@
 		<option value = "credit_card">Priority</option>
 	</select>
 	<div id = "userPreview">
-		<h2>{{selected.username}}</h2>
-		<h3>{{selected.password}}</h3>
+		<h1 id = "userName">{{selected.username}}</h1>
+		<div id ="userInfo">
+			<label for = "email" class = "float highlight">Email:</label>
+			<p id = "email" class = "highlight">{{selected.email}}</p>
+			<label for ="password" class = "float highlight">Password:</label>
+			<p id = "password" class = "highlight">{{selected.password}}</p>
+
+			<label for = "creditCard" class = "float highlight">Credit Card:</label>
+			<p id = "creditCard" class = "highlight">{{selected.credit_card}}</p>
+
+			<label for = "num_services" class = "float highlight">Number of Services</label>
+			<p id = "num_services" class = "highlight">{{selected.num_services}}</label>
+
+			<div id = "questions">
+				<label for = "question1">Security Question 1:</label>
+				<p id = "question1">{{selected.question1 | securityQuestion}}</p>
+				<label for = "answer1" class = "float">Answer:</label>
+				<p id = "answer1">{{selected.answer1}}</p>
+
+				<label for = "question2">Security Question 2:</label>
+				<p id = "question2">{{selected.question2 | securityQuestion}}</p>
+				<label for = "answer2" class = "float">Answer:</label>
+				<p id = "answer2">{{selected.answer2}}</p>
+
+				<label for = "question3">Security Question 3:</label>
+				<p id = "question3">{{selected.question3 | securityQuestion}}</p>
+				<label for = "answer3" class = "float">Answer:</label>
+				<p id = "answer3">{{selected.answer3}}</p>
+			</div>
+			
+			<a href = "#/users/{{selected.uid}}">
+				<div class = "button">
+					<div id = "viewMore">View More</div>
+				</div>
+			</a>
+
+		</div>
 	</div>
 	<div id = "userList">
-		<div class = "user credit{{user.credit_card}}" ng-id = {{user.uid}} ng-repeat = "user in users | filter:query | orderBy: orderProp: reverse" ng-click = "selectUser(user)">
+		<div class = "user credit{{user.credit_card}}" id = {{user.uid}} ng-repeat = "user in users | filter:query | orderBy: orderProp: reverse" ng-click = "selectUser(user)">
 			{{user.username}}
 		</div>
 	</div>

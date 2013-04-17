@@ -26,10 +26,12 @@ function UserList($scope, $http, User){
 	$scope.selectUser = function(user) {
 		$('#' + $scope.selected.uid).removeClass('selected');
 	    $scope.selected = user;
-	    $('#' + user.uid).addClass('selected');
+	    $('#' + $scope.selected.uid).addClass('selected');
 	}
 }
 
 function UserDetails($scope, $routeParams, User){
-
+	$scope.users = User.query(function(user) {
+	    $scope.selected = user[$routeParams.uid - 1];
+	});
 }

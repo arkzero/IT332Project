@@ -33,31 +33,121 @@ body{
 }
 
 #listView{
-	height: 580px;
+	height: 620px;
+}
+
+#listView input{
+	margin: 15px;
 }
 
 #userList{
-	width: 66%;
+	width: 593px;
+}
+
+.user{
+	padding: 15px;
+	text-align: center;
+	background-color: #70b8ff;
+	border: 1px solid black;
+}
+
+.user.credittrue{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.user.creditfalse{
+	/*background-color: #ADD6ff;*/
+}
+
+.page #userList .user.selected{
+	background-color: #cce6ff;
+	border: 0;
 }
 
 #userPreview{
 	position: relative;
 	float: right;
 	width: 34%;
-	height: 554px;
+	height: 530px;
 	background-color: #cce6ff;
-	margin-top: 26px;
+	margin-top: 52px;
+	padding: 20px;	
 }
 
-.user{
-	padding: 15px;
+#userPreview h1{
 	text-align: center;
 }
 
-.user.credittrue{
-	background-color: red;
+#userPreview #userInfo{
+	font-size: 14px;
 }
 
-.user.creditfalse{
-	background-color: green;
+#userPreview #userInfo label{
+	font-size: 16px;
+}
+
+#userInfo label.float{
+	position: relative;
+	float: left;
+	margin-right: 10px;
+}
+
+#userInfo .highlight{
+	font-size: 22px;
+}
+
+label.highlight{
+	font-weight: bold;
+}
+
+#userPreview #userInfo p{
+	text-align: right;
+	font-size: 16px;
+}
+
+#userPreview #userInfo #questions p{
+	margin: 0px;
+}
+
+.button{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	margin: auto;
+	top: 35px;
+	width: 100px;
+	margin-top: 40px;
+}
+
+.button div {
+	background-color: #5a76cc;
+	padding: 10px 20px;
+	border-radius: 15px;
+	text-decoration: none;
+	-webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.4), 2px 2px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.4), 2px 2px 2px rgba(0, 0, 0, 0.2);
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#detailsView{
+	height: 650px;
+}
+
+#detailsView #questions{
+	position: relative;
+	float: right;
+	width: 300px;
+}
+
+#detailsView #services{
+	position: relative;
+	float: right;
+	width: 300px;
+}
+
+#detailsView #userInfo{
+	width: 300px;
 }

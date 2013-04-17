@@ -1,0 +1,41 @@
+<div id = "detailsView">
+	<a href = "#/users">
+		<div class = "button">
+			<div id = "viewMore">Back</div>
+		</div>
+	</a>
+
+	<h1>{{selected.username}}</h1>
+	<div id = "services" list-services>
+
+	</div>
+	<div id = "questions">
+		<label for = "question1">Security Question 1:</label>
+		<p id = "question1">{{selected.question1 | securityQuestion}}</p>
+		<label for = "answer1" class = "float">Answer:</label>
+		<p id = "answer1">{{selected.answer1}}</p>
+
+		<label for = "question2">Security Question 2:</label>
+		<p id = "question2">{{selected.question2 | securityQuestion}}</p>
+		<label for = "answer2" class = "float">Answer:</label>
+		<p id = "answer2">{{selected.answer2}}</p>
+
+		<label for = "question3">Security Question 3:</label>
+		<p id = "question3">{{selected.question3 | securityQuestion}}</p>
+		<label for = "answer3" class = "float">Answer:</label>
+		<p id = "answer3">{{selected.answer3}}</p>
+	</div>
+	
+	<div id ="userInfo">
+		<label for = "email" class = "float highlight">Email:</label>
+		<p id = "email" class = "highlight">{{selected.email}}</p>
+		<label for ="password" class = "float highlight">Password:</label>
+		<p id = "password" class = "highlight">{{selected.password}}</p>
+
+		<label for = "creditCard" class = "float highlight">Credit Card:</label>
+		<p id = "creditCard" class = "highlight">{{selected.credit_card}}</p>
+
+		<label for = "num_services" class = "float highlight">Number of Services</label>
+		<p id = "num_services" class = "highlight">{{selected.num_services}}</label>
+	</div>
+</div>
