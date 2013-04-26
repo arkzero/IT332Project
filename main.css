@@ -76,6 +76,15 @@ body{
 	opacity: 0;
 }
 
+.page #slideBody .slide h3{
+	text-align: center;
+}
+
+.page #slideBody .slide img{
+	width: 100%;
+	height: 80%;
+}
+
 .page #slideShow #navSection{
 	width: 100%;
 	height: 150px;
@@ -148,13 +157,17 @@ body{
 	background-color: #98b0FF;
 	border-radius: 32px;
 	padding: 15px;
+	width: 400px;
+	margin: 15px;
 }
 
-#info.page .image .left{
+#info.page .left{
+	position: relative;
 	float: left;
 }
 
-#info.page .image .right{
+#info.page .right{
+	position: relative;
 	float: right;
 }
 
@@ -167,7 +180,7 @@ body{
 }
 
 #info.page img#speedImg{
-	width: 300px;
+	width: 363px;
 	margin: 0px 20px 20px;
 }
 
@@ -177,7 +190,7 @@ body{
 
 #info.page img#integrationImg{
 	margin: 0px 20px 20px;
-	width: 250px;
+	width: 330px;
 }
 
 .page .sectionHeader{
