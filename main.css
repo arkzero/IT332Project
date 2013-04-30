@@ -132,6 +132,14 @@ body{
 	line-height: 30px;
 }
 
+.page .textArea h1{
+	color: #5DA2C9;
+	font-weight: bold;
+	font-family: arial;
+	line-height: 30px;
+}
+
+
 .page .textArea .button{
 	top: 0px;
 	float: none;
