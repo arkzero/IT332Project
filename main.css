@@ -308,3 +308,17 @@ body{
 	margin-bottom: 50px;
 	border-radius: 32px;
 }
+
+#mockup{
+	margin: auto;
+	text-align: center;
+	background-color: #5a76cc;
+	border-radius: 32px;
+	margin-top: 52px;
+	padding: 20px 0px;
+	width: 840px;
+}
+
+#mockup img{
+	width: 800px;
+}
