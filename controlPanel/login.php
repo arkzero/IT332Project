@@ -1,10 +1,13 @@
 <?php
+$error = TRUE;
 
-$name = $_POST["username"];
-$pass = $_POST["password"];
+if(($_POST["username"] == "admin") && ($_POST["password"] == "thisisareallylongpassword1234"))
+	$error = FALSE;
 
-$con = mysqli_connect("sql.njit.edu", "djm28_proj", "6l28pgnN", "djm28_proj");
-
-$info = mysqli_query($con, "SELECT * FROM synergy_web_services");
+if($error) {
+	header('Location: login.html');
+} else {
+	header('Location: app.html');
+}
 
 ?>
